@@ -33,9 +33,7 @@ export class ContactsDetailsComponent implements OnInit, OnDestroy
     private _tagsPanelOverlayRef: OverlayRef;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _activatedRoute: ActivatedRoute,
         private _changeDetectorRef: ChangeDetectorRef,
@@ -51,13 +49,7 @@ export class ContactsDetailsComponent implements OnInit, OnDestroy
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Open the drawer
@@ -135,7 +127,7 @@ export class ContactsDetailsComponent implements OnInit, OnDestroy
                 }
 
                 // Add the email form groups to the emails form array
-                emailFormGCoroups.forEach((emailFormGroup) => {
+                emailFormGroups.forEach((emailFormGroup) => {
                     (this.contactForm.get('emails') as UntypedFormArray).push(emailFormGroup);
                 });
 
@@ -203,9 +195,6 @@ export class ContactsDetailsComponent implements OnInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
@@ -218,10 +207,6 @@ export class ContactsDetailsComponent implements OnInit, OnDestroy
             this._tagsPanelOverlayRef.dispose();
         }
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Close the drawer
@@ -708,12 +693,6 @@ export class ContactsDetailsComponent implements OnInit, OnDestroy
         return this.countries.find(country => country.iso === iso);
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

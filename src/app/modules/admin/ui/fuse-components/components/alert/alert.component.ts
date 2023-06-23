@@ -15,19 +15,13 @@ import { FuseComponentsComponent } from 'app/modules/admin/ui/fuse-components/fu
 })
 export class AlertComponent
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _fuseAlertService: FuseAlertService,
         private _fuseComponentsComponent: FuseComponentsComponent
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Dismiss the alert via the service

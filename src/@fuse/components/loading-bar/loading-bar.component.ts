@@ -18,16 +18,10 @@ export class FuseLoadingBarComponent implements OnChanges, OnInit, OnDestroy
     show: boolean = false;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseLoadingService: FuseLoadingService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * On changes
@@ -44,9 +38,7 @@ export class FuseLoadingBarComponent implements OnChanges, OnInit, OnDestroy
         }
     }
 
-    /**
-     * On init
-     */
+
     ngOnInit(): void
     {
         // Subscribe to the service
@@ -70,9 +62,6 @@ export class FuseLoadingBarComponent implements OnChanges, OnInit, OnDestroy
 
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions

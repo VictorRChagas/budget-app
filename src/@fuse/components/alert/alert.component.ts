@@ -33,9 +33,7 @@ export class FuseAlertComponent implements OnChanges, OnInit, OnDestroy
 
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _fuseAlertService: FuseAlertService,
@@ -74,10 +72,6 @@ export class FuseAlertComponent implements OnChanges, OnInit, OnDestroy
         /* eslint-enable @typescript-eslint/naming-convention */
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
-
     /**
      * On changes
      *
@@ -110,9 +104,7 @@ export class FuseAlertComponent implements OnChanges, OnInit, OnDestroy
         }
     }
 
-    /**
-     * On init
-     */
+
     ngOnInit(): void
     {
         // Subscribe to the dismiss calls
@@ -140,19 +132,12 @@ export class FuseAlertComponent implements OnChanges, OnInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Dismiss the alert

@@ -11,9 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ScrumboardCardComponent implements OnInit
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _activatedRoute: ActivatedRoute,
         private _matDialog: MatDialog,
@@ -22,13 +20,7 @@ export class ScrumboardCardComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Launch the modal

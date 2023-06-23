@@ -9,9 +9,7 @@ export class MaterialComponentsComponent
 {
     components: any[];
 
-    /**
-     * Constructor
-     */
+
     constructor()
     {
         this.components = [

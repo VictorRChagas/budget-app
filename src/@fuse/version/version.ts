@@ -8,9 +8,7 @@ export class Version
     public readonly minor: string;
     public readonly patch: string;
 
-    /**
-     * Constructor
-     */
+
     constructor(public version: string)
     {
         this.full = version;

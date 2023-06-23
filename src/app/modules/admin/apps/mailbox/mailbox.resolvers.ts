@@ -9,16 +9,10 @@ import { Mail, MailFilter, MailFolder, MailLabel } from 'app/modules/admin/apps/
 })
 export class MailboxFoldersResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _mailboxService: MailboxService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -37,16 +31,10 @@ export class MailboxFoldersResolver implements Resolve<any>
 })
 export class MailboxFiltersResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _mailboxService: MailboxService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -65,16 +53,10 @@ export class MailboxFiltersResolver implements Resolve<any>
 })
 export class MailboxLabelsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _mailboxService: MailboxService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -93,19 +75,13 @@ export class MailboxLabelsResolver implements Resolve<any>
 })
 export class MailboxMailsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _mailboxService: MailboxService,
         private _router: Router
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -199,19 +175,13 @@ export class MailboxMailsResolver implements Resolve<any>
 })
 export class MailboxMailResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _mailboxService: MailboxService,
         private _router: Router
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver

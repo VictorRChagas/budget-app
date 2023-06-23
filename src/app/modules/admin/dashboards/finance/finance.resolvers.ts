@@ -8,16 +8,10 @@ import { FinanceService } from 'app/modules/admin/dashboards/finance/finance.ser
 })
 export class FinanceResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _financeService: FinanceService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver

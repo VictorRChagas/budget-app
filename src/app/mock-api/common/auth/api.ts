@@ -14,9 +14,7 @@ export class AuthMockApi
     private readonly _secret: any;
     private _user: any = userData;
 
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseMockApiService: FuseMockApiService)
     {
         // Set the mock-api
@@ -25,10 +23,6 @@ export class AuthMockApi
         // Register Mock API handlers
         this.registerHandlers();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Register Mock API handlers

@@ -9,9 +9,7 @@ import { FuseMockApiService } from '@fuse/lib/mock-api/mock-api.service';
 })
 export class FuseMockApiInterceptor implements HttpInterceptor
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         @Inject(FUSE_MOCK_API_DEFAULT_DELAY) private _defaultDelay: number,
         private _fuseMockApiService: FuseMockApiService

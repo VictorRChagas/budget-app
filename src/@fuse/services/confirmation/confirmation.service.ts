@@ -29,18 +29,12 @@ export class FuseConfirmationService
         dismissible: false
     };
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _matDialog: MatDialog
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     open(config: FuseConfirmationConfig = {}): MatDialogRef<FuseConfirmationDialogComponent>
     {

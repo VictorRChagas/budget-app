@@ -18,9 +18,7 @@ export class MailboxService
     private _mail: BehaviorSubject<Mail> = new BehaviorSubject(null);
     private _pagination: BehaviorSubject<any> = new BehaviorSubject(null);
 
-    /**
-     * Constructor
-     */
+
     constructor(private _httpClient: HttpClient)
     {
     }
@@ -92,10 +90,6 @@ export class MailboxService
     {
         return this._pagination.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get filters

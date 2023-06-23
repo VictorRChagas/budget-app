@@ -8,9 +8,7 @@ import { FuseUtilsService } from '@fuse/services/utils/utils.service';
 })
 export class FuseUtilsModule
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseUtilsService: FuseUtilsService)
     {
     }

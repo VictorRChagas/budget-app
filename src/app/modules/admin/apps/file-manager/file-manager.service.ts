@@ -12,9 +12,7 @@ export class FileManagerService
     private _item: BehaviorSubject<Item | null> = new BehaviorSubject(null);
     private _items: BehaviorSubject<Items | null> = new BehaviorSubject(null);
 
-    /**
-     * Constructor
-     */
+
     constructor(private _httpClient: HttpClient)
     {
     }
@@ -38,10 +36,6 @@ export class FileManagerService
     {
         return this._item.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get items

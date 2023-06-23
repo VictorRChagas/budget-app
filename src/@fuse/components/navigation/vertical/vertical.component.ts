@@ -60,9 +60,7 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
     private _fuseScrollbarDirectivesSubscription: Subscription;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _animationBuilder: AnimationBuilder,
         private _changeDetectorRef: ChangeDetectorRef,
@@ -191,10 +189,6 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
         this._hovered = false;
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
-
     /**
      * On changes
      *
@@ -290,9 +284,7 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
         }
     }
 
-    /**
-     * On init
-     */
+
     ngOnInit(): void
     {
         // Make sure the name input is not an empty string
@@ -401,9 +393,6 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
         });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Disconnect the mutation observer
@@ -420,10 +409,6 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Refresh the component to apply the changes
@@ -542,12 +527,6 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
         }
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

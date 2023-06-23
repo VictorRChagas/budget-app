@@ -7,16 +7,10 @@ import { FuseComponentsComponent } from 'app/modules/admin/ui/fuse-components/fu
 })
 export class MockApiComponent
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseComponentsComponent: FuseComponentsComponent)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Toggle the drawer

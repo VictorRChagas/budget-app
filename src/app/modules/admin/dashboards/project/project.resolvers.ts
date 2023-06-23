@@ -8,16 +8,10 @@ import { ProjectService } from 'app/modules/admin/dashboards/project/project.ser
 })
 export class ProjectResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _projectService: ProjectService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver

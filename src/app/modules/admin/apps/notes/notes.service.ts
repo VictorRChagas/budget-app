@@ -14,9 +14,7 @@ export class NotesService
     private _note: BehaviorSubject<Note | null> = new BehaviorSubject(null);
     private _notes: BehaviorSubject<Note[] | null> = new BehaviorSubject(null);
 
-    /**
-     * Constructor
-     */
+
     constructor(private _httpClient: HttpClient)
     {
     }
@@ -48,10 +46,6 @@ export class NotesService
     {
         return this._note.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get labels

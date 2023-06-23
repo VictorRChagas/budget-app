@@ -12,9 +12,7 @@ export class MasonryComponent implements OnInit
     columns: number = 4;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _fuseComponentsComponent: FuseComponentsComponent,
         private _fuseMediaWatcherService: FuseMediaWatcherService
@@ -22,13 +20,7 @@ export class MasonryComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Subscribe to media changes
@@ -63,10 +55,6 @@ export class MasonryComponent implements OnInit
                 }
             });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Toggle the drawer

@@ -7,9 +7,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class CardedRightSidebar1PageScrollComponent
 {
-    /**
-     * Constructor
-     */
+
     constructor()
     {
     }

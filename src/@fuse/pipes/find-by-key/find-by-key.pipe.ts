@@ -9,9 +9,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FuseFindByKeyPipe implements PipeTransform
 {
-    /**
-     * Constructor
-     */
+
     constructor()
     {
     }

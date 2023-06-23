@@ -18,20 +18,12 @@ export class IconsComponent implements OnInit, OnDestroy
     selectedIcon: string[];
     private _unsubscribeAll: Subject<any> = new Subject();
 
-    /**
-     * Constructor
-     */
+
     constructor(private _iconsService: IconsService)
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Get the icons
@@ -67,19 +59,12 @@ export class IconsComponent implements OnInit, OnDestroy
             );
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Filter icons

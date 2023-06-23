@@ -12,18 +12,12 @@ export class NotesMockApi
     private _labels: any[] = labelsData;
     private _notes: any[] = notesData;
 
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseMockApiService: FuseMockApiService)
     {
         // Register Mock API handlers
         this.registerHandlers();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Register Mock API handlers

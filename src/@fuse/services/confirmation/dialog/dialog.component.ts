@@ -26,9 +26,7 @@ import { FuseConfirmationConfig } from '@fuse/services/confirmation/confirmation
 })
 export class FuseConfirmationDialogComponent
 {
-    /**
-     * Constructor
-     */
+
     constructor(@Inject(MAT_DIALOG_DATA) public data: FuseConfirmationConfig)
     {
     }

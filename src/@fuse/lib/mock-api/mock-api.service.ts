@@ -19,17 +19,9 @@ export class FuseMockApiService
         'options': new Map<string, FuseMockApiHandler>()
     };
 
-    /**
-     * Constructor
-     */
     constructor()
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
-
     /**
      * Find the handler from the service
      * with the given method and url
@@ -142,43 +134,6 @@ export class FuseMockApiService
     {
         return this._registerHandler('put', url, delay);
     }
-
-    /**
-     * Register HEAD request handler
-     *
-     * @param url - URL address of the mocked API endpoint
-     * @param delay - Delay of the response in milliseconds
-     */
-    onHead(url: string, delay?: number): FuseMockApiHandler
-    {
-        return this._registerHandler('head', url, delay);
-    }
-
-    /**
-     * Register JSONP request handler
-     *
-     * @param url - URL address of the mocked API endpoint
-     * @param delay - Delay of the response in milliseconds
-     */
-    onJsonp(url: string, delay?: number): FuseMockApiHandler
-    {
-        return this._registerHandler('jsonp', url, delay);
-    }
-
-    /**
-     * Register OPTIONS request handler
-     *
-     * @param url - URL address of the mocked API endpoint
-     * @param delay - Delay of the response in milliseconds
-     */
-    onOptions(url: string, delay?: number): FuseMockApiHandler
-    {
-        return this._registerHandler('options', url, delay);
-    }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Private methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Register and return a new instance of the handler

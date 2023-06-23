@@ -13,9 +13,7 @@ export class ContactInfoComponent
     @Input() chat: Chat;
     @Input() drawer: MatDrawer;
 
-    /**
-     * Constructor
-     */
+
     constructor()
     {
     }

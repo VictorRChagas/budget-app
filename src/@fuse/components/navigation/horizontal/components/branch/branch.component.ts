@@ -25,9 +25,7 @@ export class FuseHorizontalNavigationBranchItemComponent implements OnInit, OnDe
     private _fuseHorizontalNavigationComponent: FuseHorizontalNavigationComponent;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _fuseNavigationService: FuseNavigationService
@@ -35,13 +33,7 @@ export class FuseHorizontalNavigationBranchItemComponent implements OnInit, OnDe
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Get the parent navigation component
@@ -57,19 +49,12 @@ export class FuseHorizontalNavigationBranchItemComponent implements OnInit, OnDe
         });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Trigger the change detection
@@ -80,12 +65,6 @@ export class FuseHorizontalNavigationBranchItemComponent implements OnInit, OnDe
         this._changeDetectorRef.markForCheck();
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

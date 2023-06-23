@@ -12,22 +12,14 @@ export class SettingsPlanBillingComponent implements OnInit
     planBillingForm: UntypedFormGroup;
     plans: any[];
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _formBuilder: UntypedFormBuilder
     )
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the form
@@ -64,16 +56,6 @@ export class SettingsPlanBillingComponent implements OnInit
         ];
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
-
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

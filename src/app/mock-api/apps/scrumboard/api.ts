@@ -15,18 +15,12 @@ export class ScrumboardMockApi
     private _lists: any[] = listsData;
     private _members: any[] = membersData;
 
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseMockApiService: FuseMockApiService)
     {
         // Register Mock API handlers
         this.registerHandlers();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Register Mock API handlers

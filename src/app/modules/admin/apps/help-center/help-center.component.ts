@@ -13,20 +13,12 @@ export class HelpCenterComponent implements OnInit, OnDestroy
     faqCategory: FaqCategory;
     private _unsubscribeAll: Subject<any> = new Subject();
 
-    /**
-     * Constructor
-     */
+
     constructor(private _helpCenterService: HelpCenterService)
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Get the FAQs
@@ -37,9 +29,6 @@ export class HelpCenterComponent implements OnInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
@@ -47,16 +36,6 @@ export class HelpCenterComponent implements OnInit, OnDestroy
         this._unsubscribeAll.complete();
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
-
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

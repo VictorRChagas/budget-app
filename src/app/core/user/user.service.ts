@@ -10,9 +10,7 @@ export class UserService
 {
     private _user: ReplaySubject<User> = new ReplaySubject<User>(1);
 
-    /**
-     * Constructor
-     */
+
     constructor(private _httpClient: HttpClient)
     {
     }
@@ -36,10 +34,6 @@ export class UserService
     {
         return this._user.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get the current logged in user data

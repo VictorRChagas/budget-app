@@ -33,9 +33,7 @@ export class TasksDetailsComponent implements OnInit, AfterViewInit, OnDestroy
     private _tagsPanelOverlayRef: OverlayRef;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _activatedRoute: ActivatedRoute,
         private _changeDetectorRef: ChangeDetectorRef,
@@ -51,13 +49,7 @@ export class TasksDetailsComponent implements OnInit, AfterViewInit, OnDestroy
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Open the drawer
@@ -166,9 +158,6 @@ export class TasksDetailsComponent implements OnInit, AfterViewInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
@@ -181,10 +170,6 @@ export class TasksDetailsComponent implements OnInit, AfterViewInit, OnDestroy
             this._tagsPanelOverlayRef.dispose();
         }
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Close the drawer
@@ -527,12 +512,6 @@ export class TasksDetailsComponent implements OnInit, AfterViewInit, OnDestroy
         });
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

@@ -9,16 +9,10 @@ import { Tag, Task } from 'app/modules/admin/apps/tasks/tasks.types';
 })
 export class TasksTagsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _tasksService: TasksService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -37,16 +31,10 @@ export class TasksTagsResolver implements Resolve<any>
 })
 export class TasksResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _tasksService: TasksService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -65,19 +53,13 @@ export class TasksResolver implements Resolve<any>
 })
 export class TasksTaskResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _router: Router,
         private _tasksService: TasksService
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver

@@ -9,16 +9,10 @@ import { AcademyService } from 'app/modules/admin/apps/academy/academy.service';
 })
 export class AcademyCategoriesResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _academyService: AcademyService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -37,16 +31,10 @@ export class AcademyCategoriesResolver implements Resolve<any>
 })
 export class AcademyCoursesResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _academyService: AcademyService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -65,19 +53,13 @@ export class AcademyCoursesResolver implements Resolve<any>
 })
 export class AcademyCourseResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _router: Router,
         private _academyService: AcademyService
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver

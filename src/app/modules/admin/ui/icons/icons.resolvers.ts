@@ -8,16 +8,10 @@ import { IconsService } from 'app/modules/admin/ui/icons/icons.service';
 })
 export class IconsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _iconsService: IconsService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolve

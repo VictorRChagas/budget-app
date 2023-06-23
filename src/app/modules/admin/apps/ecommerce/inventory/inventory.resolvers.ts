@@ -9,16 +9,10 @@ import { InventoryBrand, InventoryCategory, InventoryPagination, InventoryProduc
 })
 export class InventoryBrandsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _inventoryService: InventoryService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -37,16 +31,10 @@ export class InventoryBrandsResolver implements Resolve<any>
 })
 export class InventoryCategoriesResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _inventoryService: InventoryService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -65,19 +53,13 @@ export class InventoryCategoriesResolver implements Resolve<any>
 })
 export class InventoryProductResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _inventoryService: InventoryService,
         private _router: Router
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -113,16 +95,10 @@ export class InventoryProductResolver implements Resolve<any>
 })
 export class InventoryProductsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _inventoryService: InventoryService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -141,16 +117,10 @@ export class InventoryProductsResolver implements Resolve<any>
 })
 export class InventoryTagsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _inventoryService: InventoryService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -169,16 +139,10 @@ export class InventoryTagsResolver implements Resolve<any>
 })
 export class InventoryVendorsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _inventoryService: InventoryService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver

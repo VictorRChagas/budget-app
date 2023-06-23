@@ -18,22 +18,14 @@ export class ForgotPasswordSplitScreenReversedComponent implements OnInit
     forgotPasswordForm: UntypedFormGroup;
     showAlert: boolean = false;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _formBuilder: UntypedFormBuilder
     )
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the form
@@ -41,10 +33,6 @@ export class ForgotPasswordSplitScreenReversedComponent implements OnInit
             email: ['', [Validators.required, Validators.email]]
         });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Send the reset link

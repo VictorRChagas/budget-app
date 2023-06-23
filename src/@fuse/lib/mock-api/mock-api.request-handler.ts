@@ -12,20 +12,13 @@ export class FuseMockApiHandler
     private _replyCount = 0;
     private _replied = 0;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         public url: string,
         public delay?: number
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Accessors
-    // -----------------------------------------------------------------------------------------------------
-
     /**
      * Getter for response callback
      */
@@ -69,10 +62,6 @@ export class FuseMockApiHandler
         return of(replyResult).pipe(take(1));
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
-
     /**
      * Reply
      *
@@ -82,17 +71,6 @@ export class FuseMockApiHandler
     {
         // Store the reply
         this._reply = callback;
-    }
-
-    /**
-     * Reply count
-     *
-     * @param count
-     */
-    replyCount(count: number): void
-    {
-        // Store the reply count
-        this._replyCount = count;
     }
 }
 

@@ -22,9 +22,7 @@ export class AuthSignInComponent implements OnInit
     signInForm: UntypedFormGroup;
     showAlert: boolean = false;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _activatedRoute: ActivatedRoute,
         private _authService: AuthService,
@@ -34,13 +32,7 @@ export class AuthSignInComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the form
@@ -50,10 +42,6 @@ export class AuthSignInComponent implements OnInit
             rememberMe: ['']
         });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Sign in

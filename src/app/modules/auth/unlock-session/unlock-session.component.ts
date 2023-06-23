@@ -25,9 +25,7 @@ export class AuthUnlockSessionComponent implements OnInit
     unlockSessionForm: UntypedFormGroup;
     private _email: string;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _activatedRoute: ActivatedRoute,
         private _authService: AuthService,
@@ -38,13 +36,7 @@ export class AuthUnlockSessionComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Get the user's name
@@ -64,10 +56,6 @@ export class AuthUnlockSessionComponent implements OnInit
             password: ['', Validators.required]
         });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Unlock

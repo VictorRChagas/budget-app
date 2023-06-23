@@ -14,18 +14,12 @@ export class MailboxMockApi
     private _labels: any[] = labelsData;
     private _settings: any = settingsData;
 
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseMockApiService: FuseMockApiService)
     {
         // Register Mock API handlers
         this.registerHandlers();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Register Mock API handlers

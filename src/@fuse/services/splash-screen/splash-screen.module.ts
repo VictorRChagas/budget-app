@@ -8,9 +8,7 @@ import { FuseSplashScreenService } from '@fuse/services/splash-screen/splash-scr
 })
 export class FuseSplashScreenModule
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseSplashScreenService: FuseSplashScreenService)
     {
     }

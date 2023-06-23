@@ -15,9 +15,7 @@ export class SearchMockApi
     private readonly _contacts: any[] = contacts;
     private readonly _tasks: any[] = tasks;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _fuseMockApiService: FuseMockApiService,
         private _fuseNavigationService: FuseNavigationService
@@ -26,10 +24,6 @@ export class SearchMockApi
         // Register Mock API handlers
         this.registerHandlers();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Register Mock API handlers

@@ -11,20 +11,12 @@ export class FormsWizardsComponent implements OnInit
     horizontalStepperForm: UntypedFormGroup;
     verticalStepperForm: UntypedFormGroup;
 
-    /**
-     * Constructor
-     */
+
     constructor(private _formBuilder: UntypedFormBuilder)
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Horizontal stepper form

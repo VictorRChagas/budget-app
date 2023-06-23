@@ -9,9 +9,7 @@ export class FuseAlertService
     private readonly _onDismiss: ReplaySubject<string> = new ReplaySubject<string>(1);
     private readonly _onShow: ReplaySubject<string> = new ReplaySubject<string>(1);
 
-    /**
-     * Constructor
-     */
+
     constructor()
     {
     }
@@ -35,10 +33,6 @@ export class FuseAlertService
     {
         return this._onShow.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Dismiss the alert

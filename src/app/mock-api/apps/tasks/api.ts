@@ -12,18 +12,12 @@ export class TasksMockApi
     private _tags: any[] = tagsData;
     private _tasks: any[] = tasksData;
 
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseMockApiService: FuseMockApiService)
     {
         // Register Mock API handlers
         this.registerHandlers();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Register Mock API handlers

@@ -120,16 +120,12 @@ export class LayoutOverviewComponent implements OnInit
 {
     overview: PageLayoutsOverviewData;
 
-    /**
-     * Constructor
-     */
+
     constructor(private _activatedRoute: ActivatedRoute)
     {
     }
 
-    /**
-     * On init
-     */
+
     ngOnInit(): void
     {
         // Get the route data

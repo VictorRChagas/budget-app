@@ -68,9 +68,7 @@ export class DemoSidebarComponent
 {
     menuData: FuseNavigationItem[];
 
-    /**
-     * Constructor
-     */
+
     constructor()
     {
         this.menuData = [

@@ -11,22 +11,14 @@ export class SettingsNotificationsComponent implements OnInit
 {
     notificationsForm: UntypedFormGroup;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _formBuilder: UntypedFormBuilder
     )
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the form

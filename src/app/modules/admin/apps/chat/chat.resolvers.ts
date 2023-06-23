@@ -9,19 +9,13 @@ import { Chat, Contact, Profile } from 'app/modules/admin/apps/chat/chat.types';
 })
 export class ChatChatsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _chatService: ChatService,
         private _router: Router
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -40,19 +34,13 @@ export class ChatChatsResolver implements Resolve<any>
 })
 export class ChatChatResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _chatService: ChatService,
         private _router: Router
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -88,19 +76,13 @@ export class ChatChatResolver implements Resolve<any>
 })
 export class ChatContactsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _chatService: ChatService,
         private _router: Router
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -119,19 +101,13 @@ export class ChatContactsResolver implements Resolve<any>
 })
 export class ChatProfileResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _chatService: ChatService,
         private _router: Router
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver

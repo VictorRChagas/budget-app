@@ -20,9 +20,7 @@ export class MailboxListComponent implements OnInit, OnDestroy
     selectedMail: Mail;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         public mailboxComponent: MailboxComponent,
         private _mailboxService: MailboxService
@@ -30,13 +28,7 @@ export class MailboxListComponent implements OnInit, OnDestroy
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Category
@@ -82,19 +74,12 @@ export class MailboxListComponent implements OnInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * On mail selected
@@ -117,12 +102,6 @@ export class MailboxListComponent implements OnInit, OnDestroy
         this._mailboxService.selectedMailChanged.next(mail);
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

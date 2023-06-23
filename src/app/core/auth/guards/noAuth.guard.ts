@@ -8,19 +8,13 @@ import { AuthService } from 'app/core/auth/auth.service';
 })
 export class NoAuthGuard implements CanMatch
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _authService: AuthService,
         private _router: Router
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Can match

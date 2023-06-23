@@ -25,9 +25,7 @@ export class ScrumboardBoardComponent implements OnInit, OnDestroy
     private readonly _maxPosition: number = this._positionStep * 500;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _formBuilder: UntypedFormBuilder,
@@ -37,13 +35,7 @@ export class ScrumboardBoardComponent implements OnInit, OnDestroy
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Initialize the list title form
@@ -62,19 +54,12 @@ export class ScrumboardBoardComponent implements OnInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Focus on the given element to start editing the list title
@@ -246,12 +231,6 @@ export class ScrumboardBoardComponent implements OnInit, OnDestroy
         return DateTime.fromISO(date).startOf('day') < DateTime.now().startOf('day');
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

@@ -19,22 +19,14 @@ export class ResetPasswordFullscreenReversedComponent implements OnInit
     resetPasswordForm: UntypedFormGroup;
     showAlert: boolean = false;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _formBuilder: UntypedFormBuilder
     )
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the form
@@ -47,10 +39,6 @@ export class ResetPasswordFullscreenReversedComponent implements OnInit
             }
         );
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Reset password

@@ -7,16 +7,10 @@ import { GuidesComponent } from 'app/modules/admin/docs/guides/guides.component'
 })
 export class ServingComponent
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _guidesComponent: GuidesComponent)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Toggle the drawer

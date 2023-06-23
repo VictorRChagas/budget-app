@@ -16,16 +16,10 @@ export class FuseMasonryComponent implements OnChanges, AfterViewInit
     @Input() items: any[] = [];
     distributedColumns: any[] = [];
 
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseMediaWatcherService: FuseMediaWatcherService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * On changes

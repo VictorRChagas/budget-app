@@ -18,9 +18,7 @@ export class MailboxSettingsComponent implements OnInit
     labels: MailLabel[];
     labelsForm: UntypedFormGroup;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         public mailboxComponent: MailboxComponent,
         private _formBuilder: UntypedFormBuilder,
@@ -29,13 +27,7 @@ export class MailboxSettingsComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the labels form
@@ -78,10 +70,6 @@ export class MailboxSettingsComponent implements OnInit
                 this.updateLabels();
             });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Add a label

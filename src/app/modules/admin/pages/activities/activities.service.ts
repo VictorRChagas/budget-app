@@ -11,9 +11,7 @@ export class ActivitiesService
     // Private
     private _activities: BehaviorSubject<any> = new BehaviorSubject(null);
 
-    /**
-     * Constructor
-     */
+
     constructor(private _httpClient: HttpClient)
     {
     }
@@ -29,10 +27,6 @@ export class ActivitiesService
     {
         return this._activities.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get activities

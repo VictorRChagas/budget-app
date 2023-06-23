@@ -19,9 +19,7 @@ export class SignInModernComponent implements OnInit
     signInForm: UntypedFormGroup;
     showAlert: boolean = false;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _authService: AuthService,
         private _formBuilder: UntypedFormBuilder
@@ -29,13 +27,7 @@ export class SignInModernComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the form
@@ -45,10 +37,6 @@ export class SignInModernComponent implements OnInit
             rememberMe: ['']
         });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Sign in

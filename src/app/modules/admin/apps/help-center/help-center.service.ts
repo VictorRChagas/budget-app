@@ -12,9 +12,7 @@ export class HelpCenterService
     private _guides: ReplaySubject<GuideCategory[]> = new ReplaySubject<GuideCategory[]>(1);
     private _guide: ReplaySubject<Guide> = new ReplaySubject<Guide>(1);
 
-    /**
-     * Constructor
-     */
+
     constructor(private _httpClient: HttpClient)
     {
     }
@@ -46,10 +44,6 @@ export class HelpCenterService
     {
         return this._guide.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get all FAQs

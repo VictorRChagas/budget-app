@@ -9,16 +9,10 @@ import { FaqCategory, GuideCategory } from 'app/modules/admin/apps/help-center/h
 })
 export class HelpCenterMostAskedFaqsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _helpCenterService: HelpCenterService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -37,16 +31,10 @@ export class HelpCenterMostAskedFaqsResolver implements Resolve<any>
 })
 export class HelpCenterFaqsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _helpCenterService: HelpCenterService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -65,16 +53,10 @@ export class HelpCenterFaqsResolver implements Resolve<any>
 })
 export class HelpCenterGuidesResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _helpCenterService: HelpCenterService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -93,16 +75,10 @@ export class HelpCenterGuidesResolver implements Resolve<any>
 })
 export class HelpCenterGuidesCategoryResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _helpCenterService: HelpCenterService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -121,16 +97,10 @@ export class HelpCenterGuidesCategoryResolver implements Resolve<any>
 })
 export class HelpCenterGuidesGuideResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _helpCenterService: HelpCenterService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver

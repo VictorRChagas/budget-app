@@ -23,16 +23,10 @@ export class CardsComponent implements AfterViewInit
     numberOfCards: any = {};
     selectedFilter: string = 'all';
 
-    /**
-     * Constructor
-     */
+
     constructor(private _renderer2: Renderer2)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * After view init
@@ -45,10 +39,6 @@ export class CardsComponent implements AfterViewInit
         // Filter the cards for the first time
         this._filterCards();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * On filter change

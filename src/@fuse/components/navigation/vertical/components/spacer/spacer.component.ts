@@ -17,9 +17,7 @@ export class FuseVerticalNavigationSpacerItemComponent implements OnInit, OnDest
     private _fuseVerticalNavigationComponent: FuseVerticalNavigationComponent;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _fuseNavigationService: FuseNavigationService
@@ -27,13 +25,7 @@ export class FuseVerticalNavigationSpacerItemComponent implements OnInit, OnDest
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Get the parent navigation component
@@ -49,9 +41,6 @@ export class FuseVerticalNavigationSpacerItemComponent implements OnInit, OnDest
         });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions

@@ -8,9 +8,7 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
 })
 export class FileManagerComponent
 {
-    /**
-     * Constructor
-     */
+
     constructor()
     {
     }

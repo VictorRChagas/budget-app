@@ -28,9 +28,7 @@ export class FuseVerticalNavigationCollapsableItemComponent implements OnInit, O
     private _fuseVerticalNavigationComponent: FuseVerticalNavigationComponent;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _router: Router,
@@ -56,13 +54,7 @@ export class FuseVerticalNavigationCollapsableItemComponent implements OnInit, O
         /* eslint-enable @typescript-eslint/naming-convention */
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Get the parent navigation component
@@ -171,19 +163,12 @@ export class FuseVerticalNavigationCollapsableItemComponent implements OnInit, O
         });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Collapse
@@ -257,12 +242,6 @@ export class FuseVerticalNavigationCollapsableItemComponent implements OnInit, O
         }
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

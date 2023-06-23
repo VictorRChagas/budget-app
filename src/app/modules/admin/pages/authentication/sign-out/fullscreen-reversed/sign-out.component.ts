@@ -17,9 +17,7 @@ export class SignOutFullscreenReversedComponent
         'other': '# seconds'
     };
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _authService: AuthService,
         private _router: Router

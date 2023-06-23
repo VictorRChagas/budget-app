@@ -8,16 +8,10 @@ import { ActivitiesService } from 'app/modules/admin/pages/activities/activities
 })
 export class ActivitiesResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _activityService: ActivitiesService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolve

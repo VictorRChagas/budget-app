@@ -8,9 +8,7 @@ export class FusePlatformService
 {
     osName = 'os-unknown';
 
-    /**
-     * Constructor
-     */
+
     constructor(private _platform: Platform)
     {
         // If the platform is not a browser, return immediately

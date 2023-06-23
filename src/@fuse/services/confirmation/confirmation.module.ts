@@ -22,9 +22,7 @@ import { CommonModule } from '@angular/common';
 })
 export class FuseConfirmationModule
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseConfirmationService: FuseConfirmationService)
     {
     }

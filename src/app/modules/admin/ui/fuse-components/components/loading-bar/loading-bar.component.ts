@@ -15,9 +15,7 @@ export class LoadingBarComponent
     mode: 'determinate' | 'indeterminate' = 'indeterminate';
     sliderValue: number = 0;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _httpClient: HttpClient,
         private _fuseComponentsComponent: FuseComponentsComponent,
@@ -25,10 +23,6 @@ export class LoadingBarComponent
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Toggle the drawer

@@ -18,9 +18,7 @@ export class ConversationComponent implements OnInit, OnDestroy
     drawerOpened: boolean = false;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _chatService: ChatService,
@@ -63,13 +61,7 @@ export class ConversationComponent implements OnInit, OnDestroy
         });
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Chat
@@ -102,19 +94,12 @@ export class ConversationComponent implements OnInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Open the contact info
@@ -154,12 +139,6 @@ export class ConversationComponent implements OnInit, OnDestroy
         this._chatService.updateChat(this.chat.id, this.chat).subscribe();
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

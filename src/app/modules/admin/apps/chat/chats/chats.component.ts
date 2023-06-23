@@ -19,9 +19,7 @@ export class ChatsComponent implements OnInit, OnDestroy
     selectedChat: Chat;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _chatService: ChatService,
         private _changeDetectorRef: ChangeDetectorRef
@@ -29,13 +27,7 @@ export class ChatsComponent implements OnInit, OnDestroy
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Chats
@@ -69,19 +61,12 @@ export class ChatsComponent implements OnInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Filter the chats
@@ -124,12 +109,6 @@ export class ChatsComponent implements OnInit, OnDestroy
         this._changeDetectorRef.markForCheck();
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

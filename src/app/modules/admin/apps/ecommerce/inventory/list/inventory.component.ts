@@ -57,9 +57,7 @@ export class InventoryListComponent implements OnInit, AfterViewInit, OnDestroy
     vendors: InventoryVendor[];
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _fuseConfirmationService: FuseConfirmationService,
@@ -69,13 +67,7 @@ export class InventoryListComponent implements OnInit, AfterViewInit, OnDestroy
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the selected product form
@@ -225,19 +217,12 @@ export class InventoryListComponent implements OnInit, AfterViewInit, OnDestroy
         }
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Toggle product details
@@ -578,12 +563,6 @@ export class InventoryListComponent implements OnInit, AfterViewInit, OnDestroy
         }, 3000);
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

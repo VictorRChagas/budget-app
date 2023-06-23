@@ -23,9 +23,7 @@ export class FuseVerticalNavigationGroupItemComponent implements OnInit, OnDestr
     private _fuseVerticalNavigationComponent: FuseVerticalNavigationComponent;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _fuseNavigationService: FuseNavigationService
@@ -33,13 +31,7 @@ export class FuseVerticalNavigationGroupItemComponent implements OnInit, OnDestr
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Get the parent navigation component
@@ -55,9 +47,6 @@ export class FuseVerticalNavigationGroupItemComponent implements OnInit, OnDestr
         });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
@@ -65,16 +54,6 @@ export class FuseVerticalNavigationGroupItemComponent implements OnInit, OnDestr
         this._unsubscribeAll.complete();
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
-
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

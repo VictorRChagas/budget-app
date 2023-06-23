@@ -8,9 +8,7 @@ export class FuseLoadingInterceptor implements HttpInterceptor
 {
     handleRequestsAutomatically: boolean;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _fuseLoadingService: FuseLoadingService
     )

@@ -13,9 +13,7 @@ export class TasksService
     private _task: BehaviorSubject<Task | null> = new BehaviorSubject(null);
     private _tasks: BehaviorSubject<Task[] | null> = new BehaviorSubject(null);
 
-    /**
-     * Constructor
-     */
+
     constructor(private _httpClient: HttpClient)
     {
     }
@@ -47,10 +45,6 @@ export class TasksService
     {
         return this._tasks.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get tags

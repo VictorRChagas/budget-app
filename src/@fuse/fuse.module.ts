@@ -38,9 +38,7 @@ import { FuseUtilsModule } from '@fuse/services/utils/utils.module';
 })
 export class FuseModule
 {
-    /**
-     * Constructor
-     */
+
     constructor(@Optional() @SkipSelf() parentModule?: FuseModule)
     {
         if ( parentModule )

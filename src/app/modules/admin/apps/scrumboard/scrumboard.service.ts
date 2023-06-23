@@ -13,9 +13,7 @@ export class ScrumboardService
     private _boards: BehaviorSubject<Board[] | null>;
     private _card: BehaviorSubject<Card | null>;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _httpClient: HttpClient
     )
@@ -53,10 +51,6 @@ export class ScrumboardService
     {
         return this._card.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get boards

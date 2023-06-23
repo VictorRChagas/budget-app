@@ -6,9 +6,7 @@ import { IsActiveMatchOptions } from '@angular/router';
 })
 export class FuseUtilsService
 {
-    /**
-     * Constructor
-     */
+
     constructor()
     {
     }
@@ -42,10 +40,6 @@ export class FuseUtilsService
             queryParams : 'subset'
         };
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Generates a random id

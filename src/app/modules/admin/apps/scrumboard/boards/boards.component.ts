@@ -17,9 +17,7 @@ export class ScrumboardBoardsComponent implements OnInit, OnDestroy
     // Private
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _scrumboardService: ScrumboardService
@@ -27,13 +25,7 @@ export class ScrumboardBoardsComponent implements OnInit, OnDestroy
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Get the boards
@@ -47,19 +39,12 @@ export class ScrumboardBoardsComponent implements OnInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Format the given ISO_8601 date as a relative date
@@ -71,12 +56,6 @@ export class ScrumboardBoardsComponent implements OnInit, OnDestroy
         return DateTime.fromISO(date).toRelative();
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

@@ -14,16 +14,10 @@ export class FormsFieldsComponent
     fixedSubscriptInputWithHint: FormControl = new FormControl('', [Validators.required]);
     dynamicSubscriptInputWithHint: FormControl = new FormControl('', [Validators.required]);
 
-    /**
-     * Constructor
-     */
+
     constructor(private _formBuilder: UntypedFormBuilder)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get the form field helpers as string

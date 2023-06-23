@@ -20,9 +20,7 @@ export class FuseVerticalNavigationBasicItemComponent implements OnInit, OnDestr
     private _fuseVerticalNavigationComponent: FuseVerticalNavigationComponent;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _fuseNavigationService: FuseNavigationService,
@@ -36,13 +34,7 @@ export class FuseVerticalNavigationBasicItemComponent implements OnInit, OnDestr
         this.isActiveMatchOptions = this._fuseUtilsService.subsetMatchOptions;
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Set the "isActiveMatchOptions" either from item's
@@ -69,9 +61,6 @@ export class FuseVerticalNavigationBasicItemComponent implements OnInit, OnDestr
         });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions

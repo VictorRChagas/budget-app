@@ -21,9 +21,7 @@ export class SignUpClassicComponent implements OnInit
     signUpForm: UntypedFormGroup;
     showAlert: boolean = false;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _authService: AuthService,
         private _formBuilder: UntypedFormBuilder
@@ -31,13 +29,7 @@ export class SignUpClassicComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the form
@@ -50,10 +42,6 @@ export class SignUpClassicComponent implements OnInit
             }
         );
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Sign in

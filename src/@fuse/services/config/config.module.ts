@@ -5,9 +5,7 @@ import { FUSE_APP_CONFIG } from '@fuse/services/config/config.constants';
 @NgModule()
 export class FuseConfigModule
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseConfigService: FuseConfigService)
     {
     }

@@ -21,20 +21,12 @@ export class FinanceComponent implements OnInit, AfterViewInit, OnDestroy
     recentTransactionsTableColumns: string[] = ['transactionId', 'date', 'name', 'amount', 'status'];
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(private _financeService: FinanceService)
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Get the data
@@ -62,9 +54,6 @@ export class FinanceComponent implements OnInit, AfterViewInit, OnDestroy
         this.recentTransactionsDataSource.sort = this.recentTransactionsTableMatSort;
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
@@ -72,16 +61,6 @@ export class FinanceComponent implements OnInit, AfterViewInit, OnDestroy
         this._unsubscribeAll.complete();
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
-
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

@@ -18,9 +18,7 @@ export class NotesDetailsComponent implements OnInit, OnDestroy
     noteChanged: Subject<Note> = new Subject<Note>();
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         @Inject(MAT_DIALOG_DATA) private _data: { note: Note },
@@ -30,13 +28,7 @@ export class NotesDetailsComponent implements OnInit, OnDestroy
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Edit
@@ -84,19 +76,12 @@ export class NotesDetailsComponent implements OnInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Create a new note
@@ -300,12 +285,6 @@ export class NotesDetailsComponent implements OnInit, OnDestroy
             });
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

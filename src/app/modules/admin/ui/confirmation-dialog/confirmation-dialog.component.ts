@@ -12,9 +12,7 @@ export class ConfirmationDialogComponent implements OnInit
 {
     configForm: UntypedFormGroup;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _formBuilder: UntypedFormBuilder,
         private _fuseConfirmationService: FuseConfirmationService
@@ -22,13 +20,7 @@ export class ConfirmationDialogComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Build the config form
@@ -54,10 +46,6 @@ export class ConfirmationDialogComponent implements OnInit
             dismissible: true
         });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Open confirmation dialog

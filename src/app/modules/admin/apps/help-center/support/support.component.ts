@@ -16,9 +16,7 @@ export class HelpCenterSupportComponent implements OnInit
     alert: any;
     supportForm: UntypedFormGroup;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _formBuilder: UntypedFormBuilder,
         private _helpCenterService: HelpCenterService
@@ -26,13 +24,7 @@ export class HelpCenterSupportComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the support form
@@ -43,10 +35,6 @@ export class HelpCenterSupportComponent implements OnInit
             message: ['', Validators.required]
         });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Clear the form

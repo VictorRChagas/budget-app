@@ -11,9 +11,7 @@ export class DrawerComponent
     drawerMode: FuseDrawerMode;
     drawerOpened: boolean;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _fuseComponentsComponent: FuseComponentsComponent
     )
@@ -22,10 +20,6 @@ export class DrawerComponent
         this.drawerMode = 'side';
         this.drawerOpened = true;
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Toggle the drawer mode

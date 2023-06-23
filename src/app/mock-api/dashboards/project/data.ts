@@ -206,7 +206,7 @@ export const project = {
         rows   : [
             {
                 id                 : 1,
-                type               : 'Concept',
+                type               : 'Gastos Básicos',
                 total              : 14880,
                 expensesAmount     : 14000,
                 expensesPercentage : 94.08,

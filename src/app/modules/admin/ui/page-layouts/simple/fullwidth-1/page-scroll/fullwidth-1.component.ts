@@ -7,9 +7,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class SimpleFullwidth1PageScrollComponent
 {
-    /**
-     * Constructor
-     */
+
     constructor()
     {
     }

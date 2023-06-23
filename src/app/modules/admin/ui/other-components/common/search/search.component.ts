@@ -7,16 +7,10 @@ import { OtherComponentsComponent } from 'app/modules/admin/ui/other-components/
 })
 export class SearchComponent
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _otherComponentsComponent: OtherComponentsComponent)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Toggle the drawer

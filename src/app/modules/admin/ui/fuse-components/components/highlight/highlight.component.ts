@@ -7,16 +7,10 @@ import { FuseComponentsComponent } from 'app/modules/admin/ui/fuse-components/fu
 })
 export class HighlightComponent
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseComponentsComponent: FuseComponentsComponent)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Toggle the drawer

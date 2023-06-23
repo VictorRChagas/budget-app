@@ -9,9 +9,7 @@ export class AuthService
 {
     private _authenticated: boolean = false;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _httpClient: HttpClient,
         private _userService: UserService
@@ -35,10 +33,6 @@ export class AuthService
     {
         return localStorage.getItem('accessToken') ?? '';
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Forgot password

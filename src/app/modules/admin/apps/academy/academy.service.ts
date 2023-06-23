@@ -13,9 +13,7 @@ export class AcademyService
     private _course: BehaviorSubject<Course | null> = new BehaviorSubject(null);
     private _courses: BehaviorSubject<Course[] | null> = new BehaviorSubject(null);
 
-    /**
-     * Constructor
-     */
+
     constructor(private _httpClient: HttpClient)
     {
     }
@@ -47,10 +45,6 @@ export class AcademyService
     {
         return this._course.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get categories

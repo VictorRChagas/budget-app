@@ -9,9 +9,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class DemoPlaceholderComponent
 {
-    /**
-     * Constructor
-     */
+
     constructor()
     {
     }

@@ -28,9 +28,7 @@ export class FuseScrollbarDirective implements OnChanges, OnInit, OnDestroy
     private _ps: PerfectScrollbar;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _elementRef: ElementRef,
         private _platform: Platform,
@@ -58,10 +56,6 @@ export class FuseScrollbarDirective implements OnChanges, OnInit, OnDestroy
     {
         return this._ps;
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * On changes
@@ -111,9 +105,7 @@ export class FuseScrollbarDirective implements OnChanges, OnInit, OnDestroy
         }
     }
 
-    /**
-     * On init
-     */
+
     ngOnInit(): void
     {
         // Subscribe to window resize event
@@ -129,9 +121,6 @@ export class FuseScrollbarDirective implements OnChanges, OnInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         this._destroy();
@@ -140,10 +129,6 @@ export class FuseScrollbarDirective implements OnChanges, OnInit, OnDestroy
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Is enabled

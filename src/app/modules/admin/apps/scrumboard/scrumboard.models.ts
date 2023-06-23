@@ -14,9 +14,7 @@ export class Board implements Required<IBoard>
     labels: Label[];
     members: Member[];
 
-    /**
-     * Constructor
-     */
+
     constructor(board: IBoard)
     {
         this.id = board.id || null;
@@ -80,9 +78,7 @@ export class List implements Required<IList>
     title: string;
     cards: Card[];
 
-    /**
-     * Constructor
-     */
+
     constructor(list: IList)
     {
         this.id = list.id || null;
@@ -120,9 +116,7 @@ export class Card implements Required<ICard>
     labels: Label[];
     dueDate: string | null;
 
-    /**
-     * Constructor
-     */
+
     constructor(card: ICard)
     {
         this.id = card.id || null;
@@ -158,9 +152,7 @@ export class Member implements Required<IMember>
     name: string;
     avatar: string | null;
 
-    /**
-     * Constructor
-     */
+
     constructor(member: IMember)
     {
         this.id = member.id || null;
@@ -178,9 +170,7 @@ export class Label implements Required<ILabel>
     boardId: string;
     title: string;
 
-    /**
-     * Constructor
-     */
+
     constructor(label: ILabel)
     {
         this.id = label.id || null;

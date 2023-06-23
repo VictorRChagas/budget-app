@@ -14,9 +14,7 @@ export class ContactsService
     private _countries: BehaviorSubject<Country[] | null> = new BehaviorSubject(null);
     private _tags: BehaviorSubject<Tag[] | null> = new BehaviorSubject(null);
 
-    /**
-     * Constructor
-     */
+
     constructor(private _httpClient: HttpClient)
     {
     }
@@ -56,10 +54,6 @@ export class ContactsService
     {
         return this._tags.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get contacts

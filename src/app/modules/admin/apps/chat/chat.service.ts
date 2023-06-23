@@ -14,9 +14,7 @@ export class ChatService
     private _contacts: BehaviorSubject<Contact[]> = new BehaviorSubject(null);
     private _profile: BehaviorSubject<Profile> = new BehaviorSubject(null);
 
-    /**
-     * Constructor
-     */
+
     constructor(private _httpClient: HttpClient)
     {
     }
@@ -64,10 +62,6 @@ export class ChatService
     {
         return this._profile.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get chats

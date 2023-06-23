@@ -9,16 +9,10 @@ import { Item } from 'app/modules/admin/apps/file-manager/file-manager.types';
 })
 export class FileManagerItemsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _fileManagerService: FileManagerService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -37,19 +31,13 @@ export class FileManagerItemsResolver implements Resolve<any>
 })
 export class FileManagerFolderResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _router: Router,
         private _fileManagerService: FileManagerService
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -85,19 +73,13 @@ export class FileManagerFolderResolver implements Resolve<any>
 })
 export class FileManagerItemResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _router: Router,
         private _fileManagerService: FileManagerService
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver

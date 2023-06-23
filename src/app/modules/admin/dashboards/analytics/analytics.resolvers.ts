@@ -8,16 +8,10 @@ import { AnalyticsService } from 'app/modules/admin/dashboards/analytics/analyti
 })
 export class AnalyticsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _analyticsService: AnalyticsService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver

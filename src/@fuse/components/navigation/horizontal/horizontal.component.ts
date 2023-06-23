@@ -22,9 +22,7 @@ export class FuseHorizontalNavigationComponent implements OnChanges, OnInit, OnD
     onRefreshed: ReplaySubject<boolean> = new ReplaySubject<boolean>(1);
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _fuseNavigationService: FuseNavigationService,
@@ -32,10 +30,6 @@ export class FuseHorizontalNavigationComponent implements OnChanges, OnInit, OnD
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * On changes
@@ -52,9 +46,7 @@ export class FuseHorizontalNavigationComponent implements OnChanges, OnInit, OnD
         }
     }
 
-    /**
-     * On init
-     */
+
     ngOnInit(): void
     {
         // Make sure the name input is not an empty string
@@ -67,9 +59,6 @@ export class FuseHorizontalNavigationComponent implements OnChanges, OnInit, OnD
         this._fuseNavigationService.registerComponent(this.name, this);
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Deregister the navigation component from the registry
@@ -79,10 +68,6 @@ export class FuseHorizontalNavigationComponent implements OnChanges, OnInit, OnD
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Refresh the component to apply the changes
@@ -96,12 +81,6 @@ export class FuseHorizontalNavigationComponent implements OnChanges, OnInit, OnD
         this.onRefreshed.next(true);
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

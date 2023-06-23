@@ -16,9 +16,7 @@ export class FileManagerDetailsComponent implements OnInit, OnDestroy
     item: Item;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _fileManagerListComponent: FileManagerListComponent,
@@ -27,13 +25,7 @@ export class FileManagerDetailsComponent implements OnInit, OnDestroy
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Open the drawer
@@ -55,19 +47,12 @@ export class FileManagerDetailsComponent implements OnInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions
         this._unsubscribeAll.next(null);
         this._unsubscribeAll.complete();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Close the drawer
@@ -77,12 +62,6 @@ export class FileManagerDetailsComponent implements OnInit, OnDestroy
         return this._fileManagerListComponent.matDrawer.close();
     }
 
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

@@ -37,9 +37,7 @@ export class FuseDrawerComponent implements OnChanges, OnInit, OnDestroy
     private _overlay: HTMLElement;
     private _player: AnimationPlayer;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _animationBuilder: AnimationBuilder,
         private _elementRef: ElementRef,
@@ -117,10 +115,6 @@ export class FuseDrawerComponent implements OnChanges, OnInit, OnDestroy
         // Set the hovered
         this._hovered = false;
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * On changes
@@ -203,18 +197,13 @@ export class FuseDrawerComponent implements OnChanges, OnInit, OnDestroy
         }
     }
 
-    /**
-     * On init
-     */
+
     ngOnInit(): void
     {
         // Register the drawer
         this._fuseDrawerService.registerComponent(this.name, this);
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Finish the animation
@@ -226,10 +215,6 @@ export class FuseDrawerComponent implements OnChanges, OnInit, OnDestroy
         // Deregister the drawer from the registry
         this._fuseDrawerService.deregisterComponent(this.name);
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Open the drawer

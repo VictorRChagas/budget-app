@@ -9,18 +9,12 @@ import { ScrumboardService } from 'app/modules/admin/apps/scrumboard/scrumboard.
 })
 export class ScrumboardBoardsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _scrumboardService: ScrumboardService
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -39,19 +33,13 @@ export class ScrumboardBoardsResolver implements Resolve<any>
 })
 export class ScrumboardBoardResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _router: Router,
         private _scrumboardService: ScrumboardService
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -87,19 +75,13 @@ export class ScrumboardBoardResolver implements Resolve<any>
 })
 export class ScrumboardCardResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _router: Router,
         private _scrumboardService: ScrumboardService
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver

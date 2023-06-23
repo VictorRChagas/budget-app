@@ -13,20 +13,12 @@ export class SimpleRightSidebar3ContentScrollComponent implements OnInit, OnDest
     drawerOpened: boolean = true;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseMediaWatcherService: FuseMediaWatcherService)
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Subscribe to media changes
@@ -48,9 +40,6 @@ export class SimpleRightSidebar3ContentScrollComponent implements OnInit, OnDest
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions

@@ -22,9 +22,7 @@ export class FuseCardComponent implements OnChanges
     @Input() face: FuseCardFace = 'front';
     @Input() flippable: boolean = false;
 
-    /**
-     * Constructor
-     */
+
     constructor()
     {
     }
@@ -47,10 +45,6 @@ export class FuseCardComponent implements OnChanges
         };
         /* eslint-enable @typescript-eslint/naming-convention */
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * On changes

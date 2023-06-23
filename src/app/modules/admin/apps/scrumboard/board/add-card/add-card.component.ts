@@ -18,9 +18,7 @@ export class ScrumboardBoardAddCardComponent implements OnInit
     form: UntypedFormGroup;
     formVisible: boolean = false;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _formBuilder: UntypedFormBuilder
@@ -28,13 +26,7 @@ export class ScrumboardBoardAddCardComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Initialize the new list form
@@ -42,10 +34,6 @@ export class ScrumboardBoardAddCardComponent implements OnInit
             title: ['']
         });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Save

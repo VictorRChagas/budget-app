@@ -19,9 +19,7 @@ export class GuidesComponent implements OnInit, OnDestroy
     menuData: FuseNavigationItem[];
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _fuseMediaWatcherService: FuseMediaWatcherService
@@ -161,13 +159,7 @@ export class GuidesComponent implements OnInit, OnDestroy
         ];
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Subscribe to media query change
@@ -192,9 +184,6 @@ export class GuidesComponent implements OnInit, OnDestroy
             });
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions

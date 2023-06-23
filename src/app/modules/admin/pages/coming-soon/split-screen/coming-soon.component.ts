@@ -21,9 +21,7 @@ export class ComingSoonSplitScreenComponent implements OnInit
     comingSoonForm: UntypedFormGroup;
     showAlert: boolean = false;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _authService: AuthService,
         private _formBuilder: UntypedFormBuilder
@@ -31,13 +29,7 @@ export class ComingSoonSplitScreenComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the form
@@ -45,10 +37,6 @@ export class ComingSoonSplitScreenComponent implements OnInit
             email: ['', [Validators.required, Validators.email]]
         });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Sign in

@@ -22,9 +22,7 @@ export class AuthForgotPasswordComponent implements OnInit
     forgotPasswordForm: UntypedFormGroup;
     showAlert: boolean = false;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _authService: AuthService,
         private _formBuilder: UntypedFormBuilder
@@ -32,13 +30,7 @@ export class AuthForgotPasswordComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the form
@@ -46,10 +38,6 @@ export class AuthForgotPasswordComponent implements OnInit
             email: ['', [Validators.required, Validators.email]]
         });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Send the reset link

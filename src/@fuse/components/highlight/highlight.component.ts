@@ -19,9 +19,7 @@ export class FuseHighlightComponent implements OnChanges, AfterViewInit
     highlightedCode: string;
     private _viewRef: EmbeddedViewRef<any>;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _changeDetectorRef: ChangeDetectorRef,
         private _domSanitizer: DomSanitizer,
@@ -32,10 +30,6 @@ export class FuseHighlightComponent implements OnChanges, AfterViewInit
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * On changes

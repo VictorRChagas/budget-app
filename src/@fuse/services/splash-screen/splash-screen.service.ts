@@ -6,9 +6,7 @@ import { filter, take } from 'rxjs';
 @Injectable()
 export class FuseSplashScreenService
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         @Inject(DOCUMENT) private _document: any,
         private _router: Router
@@ -24,10 +22,6 @@ export class FuseSplashScreenService
                 this.hide();
             });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Show the splash screen

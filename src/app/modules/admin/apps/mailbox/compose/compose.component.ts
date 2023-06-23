@@ -22,9 +22,7 @@ export class MailboxComposeComponent implements OnInit
         ]
     };
 
-    /**
-     * Constructor
-     */
+
     constructor(
         public matDialogRef: MatDialogRef<MailboxComposeComponent>,
         private _formBuilder: UntypedFormBuilder
@@ -32,13 +30,7 @@ export class MailboxComposeComponent implements OnInit
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the form
@@ -50,10 +42,6 @@ export class MailboxComposeComponent implements OnInit
             body   : ['', [Validators.required]]
         });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Show the copy field with the given field name

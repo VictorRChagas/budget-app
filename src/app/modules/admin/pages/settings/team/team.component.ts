@@ -11,20 +11,12 @@ export class SettingsTeamComponent implements OnInit
     members: any[];
     roles: any[];
 
-    /**
-     * Constructor
-     */
+
     constructor()
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Setup the team members
@@ -93,16 +85,6 @@ export class SettingsTeamComponent implements OnInit
         ];
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
-
-    /**
-     * Track by function for ngFor loops
-     *
-     * @param index
-     * @param item
-     */
     trackByFn(index: number, item: any): any
     {
         return item.id || index;

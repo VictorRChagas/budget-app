@@ -13,9 +13,7 @@ export class ChatMockApi
     private _messages: any[] = messagesData;
     private _profile: any = profileData;
 
-    /**
-     * Constructor
-     */
+
     constructor(private _fuseMockApiService: FuseMockApiService)
     {
         // Register Mock API handlers
@@ -35,10 +33,6 @@ export class ChatMockApi
             }))
         }));
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Register Mock API handlers

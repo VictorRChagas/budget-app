@@ -8,9 +8,7 @@ import { FuseComponentsComponent } from 'app/modules/admin/ui/fuse-components/fu
 })
 export class NavigationComponent
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _fuseNavigationService: FuseNavigationService,
         private _fuseComponentsComponent: FuseComponentsComponent
@@ -18,10 +16,6 @@ export class NavigationComponent
     {
 
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Get navigation item

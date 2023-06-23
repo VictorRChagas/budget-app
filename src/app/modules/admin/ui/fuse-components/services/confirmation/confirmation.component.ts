@@ -7,18 +7,12 @@ import { FuseComponentsComponent } from 'app/modules/admin/ui/fuse-components/fu
 })
 export class ConfirmationComponent
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _fuseComponentsComponent: FuseComponentsComponent
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Toggle the drawer

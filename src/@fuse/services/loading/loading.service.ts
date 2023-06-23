@@ -13,9 +13,7 @@ export class FuseLoadingService
     private _show$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
     private _urlMap: Map<string, boolean> = new Map<string, boolean>();
 
-    /**
-     * Constructor
-     */
+
     constructor(private _httpClient: HttpClient)
     {
     }
@@ -55,10 +53,6 @@ export class FuseLoadingService
     {
         return this._show$.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Show the loading bar

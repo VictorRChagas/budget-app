@@ -10,9 +10,7 @@ export class PricingTableComponent
 {
     yearlyBilling: boolean = true;
 
-    /**
-     * Constructor
-     */
+
     constructor()
     {
     }

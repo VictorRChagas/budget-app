@@ -13,9 +13,7 @@ export class AnimationsComponent
     animationStates: any;
     visibilityStates: any;
 
-    /**
-     * Constructor
-     */
+
     constructor()
     {
         // Set the defaults
@@ -101,10 +99,6 @@ export class AnimationsComponent
             }
         };
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Toggle animation state

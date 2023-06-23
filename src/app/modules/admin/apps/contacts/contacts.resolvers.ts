@@ -9,16 +9,10 @@ import { Contact, Country, Tag } from 'app/modules/admin/apps/contacts/contacts.
 })
 export class ContactsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _contactsService: ContactsService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -37,19 +31,13 @@ export class ContactsResolver implements Resolve<any>
 })
 export class ContactsContactResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(
         private _contactsService: ContactsService,
         private _router: Router
     )
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -85,16 +73,10 @@ export class ContactsContactResolver implements Resolve<any>
 })
 export class ContactsCountriesResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _contactsService: ContactsService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver
@@ -113,16 +95,10 @@ export class ContactsCountriesResolver implements Resolve<any>
 })
 export class ContactsTagsResolver implements Resolve<any>
 {
-    /**
-     * Constructor
-     */
+
     constructor(private _contactsService: ContactsService)
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resolver

@@ -10,9 +10,7 @@ export class FuseConfigService
 {
     private _config: BehaviorSubject<any>;
 
-    /**
-     * Constructor
-     */
+
     constructor(@Inject(FUSE_APP_CONFIG) config: any)
     {
         // Private
@@ -40,10 +38,6 @@ export class FuseConfigService
     {
         return this._config.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Resets the config to the default

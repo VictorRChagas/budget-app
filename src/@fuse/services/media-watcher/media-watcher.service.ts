@@ -9,9 +9,7 @@ export class FuseMediaWatcherService
 {
     private _onMediaChange: ReplaySubject<{ matchingAliases: string[]; matchingQueries: any }> = new ReplaySubject<{ matchingAliases: string[]; matchingQueries: any }>(1);
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _breakpointObserver: BreakpointObserver,
         private _fuseConfigService: FuseConfigService
@@ -62,10 +60,6 @@ export class FuseMediaWatcherService
     {
         return this._onMediaChange.asObservable();
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * On media query change

@@ -8,16 +8,10 @@ export class FuseDrawerService
 {
     private _componentRegistry: Map<string, FuseDrawerComponent> = new Map<string, FuseDrawerComponent>();
 
-    /**
-     * Constructor
-     */
+
     constructor()
     {
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Register drawer component

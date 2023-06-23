@@ -23,9 +23,7 @@ export class LayoutComponent implements OnInit, OnDestroy
     theme: string;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _activatedRoute: ActivatedRoute,
         @Inject(DOCUMENT) private _document: any,
@@ -38,13 +36,7 @@ export class LayoutComponent implements OnInit, OnDestroy
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Set the theme and scheme based on the configuration
@@ -109,9 +101,6 @@ export class LayoutComponent implements OnInit, OnDestroy
         this._renderer2.addClass(this._document.body, this._fusePlatformService.osName);
     }
 
-    /**
-     * On destroy
-     */
     ngOnDestroy(): void
     {
         // Unsubscribe from all subscriptions

@@ -21,22 +21,14 @@ export class UnlockSessionFullscreenComponent implements OnInit
     showAlert: boolean = false;
     unlockSessionForm: UntypedFormGroup;
 
-    /**
-     * Constructor
-     */
+
     constructor(
         private _formBuilder: UntypedFormBuilder
     )
     {
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Lifecycle hooks
-    // -----------------------------------------------------------------------------------------------------
 
-    /**
-     * On init
-     */
     ngOnInit(): void
     {
         // Create the form
@@ -50,10 +42,6 @@ export class UnlockSessionFullscreenComponent implements OnInit
             password: ['', Validators.required]
         });
     }
-
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
 
     /**
      * Unlock
